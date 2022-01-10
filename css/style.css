@@ -1,0 +1,219 @@
+/* Start Variables */
+:root {
+  --main-color: #4fbaab;
+}
+/* Start Global Rules */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* start Component */
+
+.spcial-heading {
+  color: rgb(235, 236, 237);
+  text-align: center;
+  font-size: 100px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+/* End Component */
+/* start nav */
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+nav .logo img {
+  width: 100px;
+}
+nav .container .links ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .container .links ul li {
+  margin: 0 40px;
+}
+nav .container .links ul li.active a,
+nav .container .links ul li:hover a {
+  color: #fcd363;
+}
+
+nav .container .links ul a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+/* end nav */
+/* start Home Section */
+header {
+  padding: 20px 0;
+  background-color: var(--main-color);
+}
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .container .intro {
+  color: white;
+  line-height: 2;
+}
+header .container .intro h3,
+header .container .intro h2 {
+  font-size: 40px;
+  padding-top: 0px;
+}
+header .container img {
+  width: 400px;
+}
+/* end Home Section */
+/* start about Section */
+section .info p.title {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 30px;
+  color: var(--main-color);
+}
+section .info .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+section .info .boxes img {
+  width: 100%;
+  height: 200px;
+}
+section .info .boxes p {
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-weight: bold;
+}
+/* end about Section */
+/* start services Section */
+section.services {
+  color: white;
+  line-height: 2;
+  margin-top: 20px;
+}
+section.services .content {
+  background-color: var(--main-color);
+  padding: 60px 40px;
+}
+section.services .content h2 {
+  font-size: 50px;
+}
+section.services .content li {
+  font-size: 20px;
+}
+section.services .info .boxes {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+section.services .boxes img {
+  width: 100%;
+  height: 200px;
+}
+section.services .boxes p {
+  text-align: center;
+  padding: 0;
+  color: #555;
+  font-weight: bold;
+}
+section.services .boxes p a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+/* end services Section */
+/* Start Contact Us */
+section.contact-us {
+  padding: 40px 0;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+}
+section.contact-us p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+section.contact-us .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section.contact-us form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+section.contact-us form input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+section.contact-us form input[type="submit"] {
+  width: fit-content;
+  background-color: #fcd363;
+  color: white;
+}
+
+/* end Contact Us */
+footer {
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div i {
+  padding: 10px;
+  padding-top: 20px;
+}
